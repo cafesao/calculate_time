@@ -8,6 +8,8 @@ const arg2 = process.argv[4]
 const optionFun = {
   diff: () => console.log(`Tempo restante: ${diffTime(arg1, arg2)}h`),
   add: () => console.log(`${arg1}h + ${arg2}h: ${addTime(arg1, arg2)}h`),
+  diff_result: () => console.log(diffTime(arg1, arg2)),
+  add_result: () => console.log(addTime(arg1, arg2)),
 }
 
 optionFun[option]()
